@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.pointdeveloper.myapp"
+        versionCode = "1" 
+        version     = "1.0.0" >
+ 
+    <!-- versionCode is Android only -->
+    <!-- version is in major.minor.patch format --> 
+    <name>splash</name>
+ 
+    <description>
+        An example for phonegap build app which wont show up in the playstore. 
+    </description>
+ 
+    <author href="https://YourWebsite.com" email="kapilsharma1911995@gmail.com">
+        Kapil
+    </author>
+   <content src="index.html"> 
+   <preference name="orientation" value="portrait" />
+  <preference name="fullscreen" value="true" />
+  <preference name="KeepRunning" value="false"/>
+  
+  <preference name="android-build-tool" value="gradle" />  
+ 
+  <plugin name="cordova-plugin-whitelist" source="npm" />
+  <plugin name="cordova-plugin-x-socialsharing" source="npm" />
+  <plugin name="cordova-plugin-inappbrowser" source="npm"/>
+  <plugin spec="https://github.com/floatinghotpot/cordova-admob-pro" source="git" />
+  <plugin name="cordova-plugin-network-information" source="npm" />
+  <plugin name="cordova-universal-clipboard" source="npm"/>
+  <plugin name="phonegap-plugin-barcodescanner" source="npm"/>
+  <plugin name="cordova-plugin-x-toast" />
+ <gap:plugin name="org.apache.cordova.splashscreen" />
+<preference name="SplashScreen" value="screen"/>
+<preference name="SplashScreenDelay" value="5000" />
+
+<splash platform="android" qualifier="port-ldpi" src="img/drawable-port-ldpi/screen.png" />
+<splash platform="android" qualifier="port-mdpi" src="img/drawable-port-mdpi/screen.png" />
+<splash platform="android" qualifier="port-hdpi" src="img/drawable-port-hdpi/screen.png" />
+<splash platform="android" qualifier="port-xhdpi" src="img/drawable-port-xhdpi/screen.png"/>
+
+</widget>
