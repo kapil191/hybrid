@@ -1,29 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="io.cordova.hellocordova" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>splash</name>
- 
+    <name>HelloCordova</name>
     <description>
-        An example for phonegap build app which wont show up in the playstore. 
+        A sample Apache Cordova application that responds to the deviceready event.
     </description>
- 
-    <author href="https://YourWebsite.com" email="kapilsharma1911995@gmail.com">
-        Kapil
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        Apache Cordova Team
     </author>
-   <content src="index.html"> 
-   <preference name="orientation" value="portrait" />
-  <preference name="fullscreen" value="true" />
-  <preference name="KeepRunning" value="false"/>
-  
-  <preference name="android-build-tool" value="gradle" />  
- 
-  <plugin name="cordova-plugin-whitelist" source="npm" />
-  <plugin name="cordova-plugin-x-socialsharing" source="npm" />
-  <plugin name="cordova-plugin-inappbrowser" source="npm"/>
-  <plugin spec="https://github.com/floatinghotpot/cordova-admob-pro" source="git" />
-  <plugin name="cordova-plugin-network-information" source="npm" />
-  <plugin name="cordova-universal-clipboard" source="npm"/>
-  <plugin name="phonegap-plugin-barcodescanner" source="npm"/>
-  <plugin name="cordova-plugin-x-toast" />
+    <content src="index.html" />
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <access origin="*" />
  <gap:plugin name="org.apache.cordova.splashscreen" />
 <preference name="SplashScreen" value="screen"/>
 <preference name="SplashScreenDelay" value="5000" />
